@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./css/music.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <title>Music is Love</title>
+</head>
+
+<body>
+
+  <div class="üstmenü">
+    <a class="aktif" href="">Home</a>
+    <a href="">News</a>
+    <a href="">Contact</a>
+    <a href="">About</a>
+  </div>
+
+  <section class="bolum1">
+    <img class="foto1" src="css/img_band_la.jpg">
+    <img class="foto1" src="css/img_band_ny.jpg">
+    <img class="foto1" src="css/img_band_chicago.jpg">
+  </section>
+
+
+  <section class="bolum2 orta içerik">
+    <h2 class="baslik2">THE BAND</h2>
+    <p class="altyazi1"> <i>We Love Music</i></p>
+    <p class="uzunparagraf">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+      mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </section><br><br>
+
+
+  <section class="satırdolgusu orta acıkgri">
+    <article class="third">
+      <p>John</p>
+      <img class="foto3" src="css/rock3.jpg">
+      <p>John is the smartest.</p>
+    </article>
+    <article class="third">
+      <p>Paul</p>
+      <img class="fto2" src=" css/rock2 (1).jpg">
+      <p>Paul is the prettiest.</p>
+    </article>
+    <article class="third">
+      <p>Ringo</p>
+      <img class="foto3" src="css/foto3.jpg">
+      <p>Ringo is the funniest.</p>
+
+    </article>
+
+  </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="siyahblok">
+
+
+    <footer class=" bolum2 altdolgumalzemesi orta altsiyah xlarge">
+      <a href=""><i class="fa fa-facebook-official"></i></a>
+      <a href=""><i class="fa fa-pinterest-p"></i></a>
+      <a href=""><i class="fa fa-twitter"></i></a>
+      <a href=""><i class="fa fa-flickr"></i></a>
+      <a href=""><i class="fa fa-linkedin"></i></a>
+      <p class="medium">
+        Created By <a href="https://emreozbkr.github.io/emre.43/space/" target="_blank">emreozbkr</a>
+      </p>
+
+
+    </footer>
+  </div>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("foto1");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+  </script>
+
+
+</body>
+
+
+</html>
